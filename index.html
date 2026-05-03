@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Dados!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./icons8-dado-48.png" type="image/x-icon">
+</head>
+
+<body class="bg-slate-200 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-3xl shadow-2xl text-center max-w-sm w-full border border-slate-200">
+
+        <h1 class="text-2xl font-bold text-red-600 mb-6 tracking-tight">
+            🎲 ¡Suerte!
+        </h1>
+
+        <div class="flex justify-center mb-8">
+            <img id="imagenDado" src="./dado1.png" alt="Dado"
+                class="w-40 h-40 object-contain transition-all duration-300 transform hover:scale-110 drop-shadow-md">
+        </div>
+
+        <button onclick="lanzar()"
+            class="bg-indigo-600 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-xl w-full duration-300 transition-all">
+            Lanzar Dado
+        </button>
+
+        <p id="mensaje" class="mt-4 text-red-600 font-medium">Haz clic para empezar</p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
