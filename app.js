@@ -5,7 +5,6 @@ function lanzar() {
 
     dadoImg.src = `dado${numeroRandom}.png`;
 
-    // 4. Actualizar el mensaje (opcional)
     const mensaje = document.getElementById("mensaje");
 
     mensaje.innerText = `¡Salió el ${numeroRandom}!`;
